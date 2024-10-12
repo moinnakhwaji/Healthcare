@@ -40,7 +40,8 @@ import { Checkbox } from "./ui/checkbox";
     dateFormat?: string;
     showTimeSelect?: boolean;
     children?: React.ReactNode;
-    renderSkeleton?: (field: any) => React.ReactNode;
+    renderSkeleton?: (field: { value: string | number | boolean | undefined }) => React.ReactNode;
+
     fieldType: FormFieldType;
   }
   
