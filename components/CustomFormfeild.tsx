@@ -45,10 +45,10 @@ import { Checkbox } from "./ui/checkbox";
   }
   
   // Define E164Number manually if needed
-  type E164Number = string;
+ 
   
   const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
-    const { fieldType, iconAlt, iconSrc, placeholder,showTimeSelect,dateFormat } = props;
+    const { fieldType, iconAlt, iconSrc, placeholder, } = props;
     switch (fieldType) {
       case FormFieldType.INPUT:
         return (
@@ -154,7 +154,7 @@ import { Checkbox } from "./ui/checkbox";
   };
   
   const CustomFormField = (props: CustomProps) => {
-    const { control, fieldType, name, label,renderSkeleton } = props;
+    const { control, fieldType, name, label } = props;
     return (
       <FormField
         control={control}
