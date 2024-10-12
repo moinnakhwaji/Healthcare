@@ -1,9 +1,9 @@
-import PatientForm from "@/components/forms/patientForm";
+
 import RegisterForm from "@/components/forms/RegisterForm";
 import { getUser } from "@/lib/actions/patient.action";
-import { API_KEY } from "@/lib/appwrite.config";
+
 import Image from "next/image";
-import Link from "next/link";
+
 
 const Register = async ({ params: { userId } }: SearchParamProps) => {
   const user = await getUser(userId);

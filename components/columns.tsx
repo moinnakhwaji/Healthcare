@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Doctors } from "@/constants";
 import { formatDateTime } from "@/lib/utils";
 import { Appointment } from "@/types/appwrite.types";
-// import { StatusBadge } from "../StatusBadge";
 import {AppointmentModal} from "./AppointmentModal";
 import { StatusBadge } from "./StatusBadge";
 
@@ -65,13 +64,14 @@ export const columns: ColumnDef<Appointment>[] = [
 
       return (
         <div className="flex items-center gap-3">
-          <Image
-            src={doctor?.image!}
-            alt="doctor"
-            width={100}
-            height={100}
-            className="size-8"
-          />
+         <Image
+  src={doctor?.image ?? "/path/to/fallback-image.jpg"} // Provide a fallback image here
+  alt="doctor"
+  width={100}
+  height={100}
+  className="size-8"
+/>
+
           <p className="whitespace-nowrap">Dr. {doctor?.name}</p>
         </div>
       );

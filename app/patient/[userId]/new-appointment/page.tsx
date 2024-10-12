@@ -1,5 +1,5 @@
 import AppointmentForm from "@/components/forms/AppointmentForm";
-import { getPatient, getUser } from "@/lib/actions/patient.action";
+import {  getUser } from "@/lib/actions/patient.action";
 import Image from "next/image";
 
 
