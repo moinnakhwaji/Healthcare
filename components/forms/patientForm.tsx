@@ -87,7 +87,7 @@ const PatientForm = () => {
       
        />
 
-     <SubmitButton  isloading={isloading} >Get startted</SubmitButton>
+     <SubmitButton  isloading={isloading} >Get started</SubmitButton>
       </form>
     </Form>
   )
