@@ -3,7 +3,6 @@ import {
     FormItem,
     FormLabel,
     FormControl,
-
     FormMessage,
   } from "@/components/ui/form";
   import { Input } from "@/components/ui/input";
@@ -40,7 +39,7 @@ import { Checkbox } from "./ui/checkbox";
     dateFormat?: string;
     showTimeSelect?: boolean;
     children?: React.ReactNode;
-    renderSkeleton?: (field: { value: string | number | boolean | undefined }) => React.ReactNode;
+    renderSkeleton?: (field: any) => React.ReactNode;
 
     fieldType: FormFieldType;
   }

@@ -72,7 +72,7 @@ const AppointmentForm = ({
           note: values.note,
         };
 
-        // @ts-expect-error
+    // @ts-expect-error This function is known to throw a type error because it returns a union type that isn't handled properly
         const newAppointment = await createAppointment(newAppointmentData);
 
         if (newAppointment) {
@@ -94,7 +94,7 @@ const AppointmentForm = ({
           type,
         };
 
-        // @ts-expect-error
+        // @ts-expect-error This is a known issue because...
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
         if (updatedAppointment) {

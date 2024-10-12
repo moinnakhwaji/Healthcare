@@ -83,8 +83,7 @@ const PatientForm = () => {
       name="phone"
       label="phone number"
       placeholder="(555) 123-789.."
-      // iconSrc="/assets/icons/email.svg"
-      // iconAlt="email"
+     
       
        />
 
